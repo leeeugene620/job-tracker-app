@@ -70,9 +70,9 @@ export default function JobList({ jobs, onDelete, onUpdate}) {
                         <td className="border p-2">
                             {editBuffer.date}
                         </td>
-                        <td  className="border p-2" colSpan={2}>
-                            <button onClick={saveEdit} className="text-green-600 mr-2">Save</button>
-                            <button onClick={cancelEdit} className="text-green-600 mr-2">Cancel</button>
+                        <td  className="border flex justify-center p-2" colSpan={2}>
+                            <button onClick={saveEdit} className="bg-gray-400 text-green-600 mr-2">Save</button>
+                            <button onClick={cancelEdit} className="bg-gray-400 text-red-600 mr-2">Cancel</button>
                         </td>                                                                                                
                     </tr>
                     ) : (
@@ -88,7 +88,7 @@ export default function JobList({ jobs, onDelete, onUpdate}) {
                         <td className="border p-2">{job.date}</td>
                         <td className="border p-2 flex justify-center gap-2">
                             <button onClick={() => onDelete(job.id)} className="bg-gray-400 text-red-600">Delete</button>
-                            <button onClick={() => startEdit(job)} className="bg-gray-400 text-red-600">Edit</button>
+                            <button onClick={() => startEdit(job)} className="bg-gray-400 text-blue-600">Edit</button>
                         </td>                      
                     </tr>
                     )
