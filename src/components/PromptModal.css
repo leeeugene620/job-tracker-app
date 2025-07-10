@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+.modal-overlay {
+  @apply fixed inset-0 flex items-center justify-center bg-black/50;
+}
+
+.modal-container {
+  @apply bg-white p-4 rounded shadow;
+}
+
+.modal-message {
+  @apply mb-4 font-semibold;
+}
+
+.modal-buttons {
+  @apply flex space-x-2 justify-end;
+}
+
+.modal-button {
+  @apply px-4 py-2 rounded;
+}
+
+.modal-button.replace {
+  @apply bg-red-500 text-white;
+}
+
+.modal-button.merge {
+  @apply bg-blue-500 text-white;
+}
+
+.modal-button.cancel {
+  @apply bg-gray-300;
+}
